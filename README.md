@@ -3,7 +3,7 @@
 Current Status :  Can take tournament name as an input string and use that to navigate to the tournament's
 results page for parli. Todo: sort by speaks or oppSeed
 
-NOTE : as of right now, this will not work for tournaments that break to more than double octas. 
+NOTE : This'll depend on final implementation, but as of right now, this will not work for tournaments that break to more than double octas. 
 
 Program to determine accuracy of different metrics for predicting debate breaks
 
