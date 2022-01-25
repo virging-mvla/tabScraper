@@ -9,7 +9,7 @@ driver = webdriver.Chrome(PATH)
 
 driver.get("https://www.tabroom.com/index/index.mhtml")
 searchQuery = driver.find_element_by_name("search")
-searchQuery.send_keys("James Logan")
+searchQuery.send_keys("National Parliamentary")
 searchQuery.send_keys(Keys.RETURN)
 
 main = WebDriverWait(driver, 10).until(
@@ -21,7 +21,6 @@ try:
     tag = divTag.find_element_by_tag_name("td")
     tourneyName = tag.find_element_by_tag_name(
         "a")
-    print("hello")
     driver.get(tourneyName.get_attribute('href'))
     try:
         tourneyResults = WebDriverWait(driver, 10).until(
