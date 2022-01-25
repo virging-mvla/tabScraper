@@ -1,4 +1,8 @@
 # tabScraper
+
+Current Status :  Can take tournament name as an input string and use that to navigate to the tournament's
+results page. Todo: navigate to parli results page and sort by speaks or oppSeed
+
 Program to determine accuracy of different metrics for predicting debate breaks
 
 Currently, several large parliamentary debate tournaments, such as the National Parliamentary Debate Invitational, 
@@ -13,5 +17,5 @@ which teams should move to elim rounds.
 
 The purpose of this program is to scale that calculation up easily. While calculating this data for NPDI 2021 was useful, 
 it did take a while, and that was only one tournament. This program's goal is to be able to easily calculate the quality 
-of both oppSeed and speaker points for every parli tournament that has published this data, to get a better idea as to 
+of both oppSeed and speaker points for every parli tournament that has published this data to get a better idea as to 
 which method is better. 
