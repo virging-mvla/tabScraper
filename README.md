@@ -1,4 +1,4 @@
-# tabScraper
+# Tabroom Scraper
 
 Current Status :  Can take tournament name as an input string and use that to navigate to the tournament's
 results page. Todo: navigate to parli results page and sort by speaks or oppSeed
