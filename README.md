@@ -17,5 +17,5 @@ which teams should move to elim rounds.
 
 The purpose of this program is to scale that calculation up easily. While calculating this data for NPDI 2021 was useful, 
 it did take a while, and that was only one tournament. This program's goal is to be able to easily calculate the quality 
-of both oppSeed and speaker points for every parli tournament that has published this data, to get a better idea as to 
+of both oppSeed and speaker points for every parli tournament that has published this data to get a better idea as to 
 which method is better. 
