@@ -5,8 +5,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
-#from bs4 import beautifulsoup
-import time
+from bs4 import BeautifulSoup
+import json
 
 # driver setup
 chrome_options = Options()
@@ -18,11 +18,12 @@ driver = webdriver.Chrome(PATH, chrome_options=chrome_options)
 # search for tournament
 driver.get("https://www.tabroom.com/index/index.mhtml")
 searchQuery = driver.find_element_by_name("search")
-tournamentName = "National Parliamentary Debate Invitational"
+tournamentName = "James Logan"
 searchQuery.send_keys(tournamentName)
 searchQuery.send_keys(Keys.RETURN)
 
 # find tournament
+teamData = {}
 main = WebDriverWait(driver, 10).until(
     EC.presence_of_element_located((By.ID, "search_results")))
 divTags = main.find_elements_by_tag_name("tr")
@@ -43,7 +44,7 @@ try:
         try:
             select = Select(
                 driver.find_element_by_xpath("/html/body/div/div[2]/div/div[1]/div[1]/form/div/span[1]/select"))
-            select.select_by_visible_text("Open Parli")
+            select.select_by_visible_text("Parliamentary Debate")
             button = driver.find_element_by_xpath(
                 "/html/body/div/div[2]/div/div[1]/div[1]/form/div/span[2]/input")
             button.click()
@@ -59,15 +60,35 @@ try:
                     "table")
                 tableRow = tableHead.find_element_by_tag_name("tr")
                 tableCol = tableRow.find_elements_by_tag_name("th")
+                i = 0
                 for col in tableCol:
-                    print(col.text)
+                    i += 1
+                    #print(col.text)
                     if "OSd" in col.text:
                         col.click()
                         col.click()
                         print("true")
+                        break
                     else:
                         continue
-
+                tableHead = driver.find_element_by_tag_name(
+                    "table")
+                tableHead = tableHead.get_attribute('innerHTML')
+                tableHead = BeautifulSoup(tableHead, 'html.parser')
+                j = 0
+                for row in tableHead.tbody.findAll('tr'):
+                    if (j >= 32):
+                        break
+                    place_col = row.findAll('td')[0].get_text(strip=True)
+                    name_col = row.findAll('td')[1].get_text(strip=True)
+                    oppseed_col = row.findAll('td')[i-1].get_text(strip=True)
+                    teamData[name_col] = {}
+                    teamData[name_col]['Place'] = place_col
+                    teamData[name_col]['OppSeed'] = oppseed_col
+                    j += 1
+                with open(tournamentName.strip()+".json", "w") as outfile:
+                    json.dump(teamData, outfile, indent=3)
+                #print(teamData)
             except:
                 print()
                 #driver.quit()
