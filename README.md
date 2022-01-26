@@ -2,6 +2,7 @@
 
 Current Status :  Can take tournament name as an input string and use that to navigate to the tournament's parli results page.
 Can then navigate to prelim seeding info, sort by oppseed, save the top 32 team (by oppseed) names, their oppseed and actual seed.
+
 Todo: Assign each team a variance and make this work with speaks as well. 
 
 NOTE : This'll depend on final implementation, but as of right now, this will not work for tournaments that break to more than double octas. 
