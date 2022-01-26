@@ -7,6 +7,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import json
+import time
 
 # driver setup
 chrome_options = Options()
@@ -97,15 +98,49 @@ try:
                                 teamData[name_col]['Expected'] = 4
                         else:
                             teamData[name_col]['Expected'] = 5
-
+                    if int(place_col) > 32:
+                        teamData[name_col]['Variance'] = teamData[name_col]['Expected']
                     teamData[name_col]['Place'] = place_col
                     teamData[name_col]['OppSeed'] = oppseed_col
-                    print(j)
                     j += 1
                 with open(tournamentName.strip()+".json", "w") as outfile:
                     json.dump(teamData, outfile, indent=3)
-                print("hi")
-                #print(teamData)
+                try:
+                    recordButton = driver.find_element_by_partial_link_text(
+                        "Prelim Records")
+                    recordButton.click()
+
+                    table = driver.find_element_by_tag_name(
+                        "table")
+                    head = table.get_attribute('innerHTML')
+                    head = BeautifulSoup(head, 'html.parser')
+                    print(head)
+                    k = 0
+                    for row in head.tbody.findAll('tr'):
+                        if(k >= 32):
+                            break
+                        name = row.findAll('td')[2]
+                        nameButton = driver.find_element_by_link_text(
+                            name.get_text(strip=True))
+                        nameButton.click()
+                        teamTable = driver.find_element_by_xpath(
+                            '/html/body/div[1]/div[2]/div/div[3]')
+                        teamTable = BeautifulSoup(
+                            teamTable.get_attribute('innerHTML'), 'html.parser')
+                        actual = 0
+                        for each in teamTable.select('div[class*="row"]'):
+                            if "Round" not in each.findAll('span')[1].get_text(strip=True):
+                                actual += 1
+                            else:
+                                break
+                        print(name.get_text(strip=True))
+                        print(actual)
+                        driver.back()
+                        k += 1
+                    time.sleep(1000)
+                except:
+                    print()
+                #print(teamData
             except:
                 print()
                 #driver.quit()
@@ -113,6 +148,8 @@ try:
             print()
             #driver.quit()
     except:
-        driver.quit()
+        print()
+        #driver.quit()
 except:
-    driver.quit()
+    print()
+    #driver.quit()

@@ -36,11 +36,13 @@
    },
    "Los Altos CL": {
       "Expected": 3,
+      "Variance": 3,
       "Place": "43",
       "OppSeed": "23.20"
    },
    "Lowell UY": {
       "Expected": 2,
+      "Variance": 2,
       "Place": "46",
       "OppSeed": "23.60"
    },
@@ -56,6 +58,7 @@
    },
    "Granite Bay BS": {
       "Expected": 2,
+      "Variance": 2,
       "Place": "45",
       "OppSeed": "26.00"
    },
@@ -71,6 +74,7 @@
    },
    "Cupertino DD": {
       "Expected": 2,
+      "Variance": 2,
       "Place": "49",
       "OppSeed": "27.00"
    },
@@ -91,6 +95,7 @@
    },
    "Bishop O'Dowd WT": {
       "Expected": 1,
+      "Variance": 1,
       "Place": "44",
       "OppSeed": "28.00"
    },
@@ -106,16 +111,19 @@
    },
    "Piedmont BJ": {
       "Expected": 1,
+      "Variance": 1,
       "Place": "58",
       "OppSeed": "29.40"
    },
    "Bishop O'Dowd JR": {
       "Expected": 1,
+      "Variance": 1,
       "Place": "34",
       "OppSeed": "30.40"
    },
    "Mountain View LX": {
       "Expected": 1,
+      "Variance": 1,
       "Place": "62",
       "OppSeed": "30.60"
    },
@@ -126,11 +134,13 @@
    },
    "West County CA": {
       "Expected": 1,
+      "Variance": 1,
       "Place": "33",
       "OppSeed": "30.80"
    },
    "Cupertino SS": {
       "Expected": 1,
+      "Variance": 1,
       "Place": "61",
       "OppSeed": "31.00"
    },
