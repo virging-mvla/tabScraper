@@ -83,11 +83,28 @@ try:
                     name_col = row.findAll('td')[1].get_text(strip=True)
                     oppseed_col = row.findAll('td')[i-1].get_text(strip=True)
                     teamData[name_col] = {}
+                    if (j >= 0):
+                        if(j > 1):
+                            if (j > 3):
+                                if (j > 7):
+                                    if (j > 15):
+                                        teamData[name_col]['Expected'] = 1
+                                    else:
+                                        teamData[name_col]['Expected'] = 2
+                                else:
+                                    teamData[name_col]['Expected'] = 3
+                            else:
+                                teamData[name_col]['Expected'] = 4
+                        else:
+                            teamData[name_col]['Expected'] = 5
+
                     teamData[name_col]['Place'] = place_col
                     teamData[name_col]['OppSeed'] = oppseed_col
+                    print(j)
                     j += 1
                 with open(tournamentName.strip()+".json", "w") as outfile:
                     json.dump(teamData, outfile, indent=3)
+                print("hi")
                 #print(teamData)
             except:
                 print()

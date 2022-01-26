@@ -1,129 +1,161 @@
 {
    "Lowell PG": {
+      "Expected": 5,
       "Place": "4",
       "OppSeed": "19.00"
    },
    "Dougherty Valley CX": {
+      "Expected": 5,
       "Place": "19",
       "OppSeed": "19.40"
    },
    "Los Altos LV": {
+      "Expected": 4,
       "Place": "18",
       "OppSeed": "20.40"
    },
    "Menlo-Atherton GP": {
+      "Expected": 4,
       "Place": "14",
       "OppSeed": "21.80"
    },
    "Dougherty Valley SM": {
+      "Expected": 3,
       "Place": "17",
       "OppSeed": "22.60"
    },
    "Serra DA": {
+      "Expected": 3,
       "Place": "9",
       "OppSeed": "23.00"
    },
    "Los Altos MP": {
+      "Expected": 3,
       "Place": "29",
       "OppSeed": "23.20"
    },
    "Los Altos CL": {
+      "Expected": 3,
       "Place": "43",
       "OppSeed": "23.20"
    },
    "Lowell UY": {
+      "Expected": 2,
       "Place": "46",
       "OppSeed": "23.60"
    },
    "Campolindo KR": {
+      "Expected": 2,
       "Place": "6",
       "OppSeed": "25.00"
    },
    "Monta Vista RD": {
+      "Expected": 2,
       "Place": "12",
       "OppSeed": "25.20"
    },
    "Granite Bay BS": {
+      "Expected": 2,
       "Place": "45",
       "OppSeed": "26.00"
    },
    "Cupertino KJ": {
+      "Expected": 2,
       "Place": "11",
       "OppSeed": "26.40"
    },
    "Los Altos DB": {
+      "Expected": 2,
       "Place": "22",
       "OppSeed": "26.40"
    },
    "Cupertino DD": {
+      "Expected": 2,
       "Place": "49",
       "OppSeed": "27.00"
    },
    "Menlo-Atherton DA": {
+      "Expected": 2,
       "Place": "8",
       "OppSeed": "27.60"
    },
    "Davis Senior MM": {
+      "Expected": 1,
       "Place": "26",
       "OppSeed": "27.60"
    },
    "Campolindo TY": {
+      "Expected": 1,
       "Place": "13",
       "OppSeed": "27.80"
    },
    "Bishop O'Dowd WT": {
+      "Expected": 1,
       "Place": "44",
       "OppSeed": "28.00"
    },
    "Los Altos LK": {
+      "Expected": 1,
       "Place": "7",
       "OppSeed": "28.25"
    },
    "Menlo-Atherton DC": {
+      "Expected": 1,
       "Place": "15",
       "OppSeed": "29.20"
    },
    "Piedmont BJ": {
+      "Expected": 1,
       "Place": "58",
       "OppSeed": "29.40"
    },
    "Bishop O'Dowd JR": {
+      "Expected": 1,
       "Place": "34",
       "OppSeed": "30.40"
    },
    "Mountain View LX": {
+      "Expected": 1,
       "Place": "62",
       "OppSeed": "30.60"
    },
    "Irvington DR": {
+      "Expected": 1,
       "Place": "1",
       "OppSeed": "30.80"
    },
    "West County CA": {
+      "Expected": 1,
       "Place": "33",
       "OppSeed": "30.80"
    },
    "Cupertino SS": {
+      "Expected": 1,
       "Place": "61",
       "OppSeed": "31.00"
    },
    "Archbishop Mitty DB": {
+      "Expected": 1,
       "Place": "27",
       "OppSeed": "31.20"
    },
    "Campolindo MS": {
+      "Expected": 1,
       "Place": "5",
       "OppSeed": "31.80"
    },
    "Cleveland SP": {
+      "Expected": 1,
       "Place": "10",
       "OppSeed": "31.80"
    },
    "Piedmont HV": {
+      "Expected": 1,
       "Place": "24",
       "OppSeed": "31.80"
    },
    "Los Altos MC": {
+      "Expected": 1,
       "Place": "2",
       "OppSeed": "32.00"
    }
