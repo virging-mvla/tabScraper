@@ -5,6 +5,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
+#from bs4 import beautifulsoup
+import time
 
 # driver setup
 chrome_options = Options()
@@ -53,10 +55,25 @@ try:
                 driver.close()
                 driver = webdriver.Chrome(PATH)
                 driver.get(url)
+                tableHead = driver.find_element_by_tag_name(
+                    "table")
+                tableRow = tableHead.find_element_by_tag_name("tr")
+                tableCol = tableRow.find_elements_by_tag_name("th")
+                for col in tableCol:
+                    print(col.text)
+                    if "OSd" in col.text:
+                        col.click()
+                        col.click()
+                        print("true")
+                    else:
+                        continue
+
             except:
-                driver.quit()
+                print()
+                #driver.quit()
         except:
-            driver.quit()
+            print()
+            #driver.quit()
     except:
         driver.quit()
 except:
