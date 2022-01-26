@@ -1,7 +1,7 @@
 # tabScraper
 
 Current Status :  Can take tournament name as an input string and use that to navigate to the tournament's
-results page. Todo: navigate to parli results page and sort by speaks or oppSeed
+parli results page. Todo: navigate to prelim seeding info and sort by speaks or oppSeed
 
 Program to determine accuracy of different metrics for predicting debate breaks
 

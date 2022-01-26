@@ -37,6 +37,7 @@ try:
                 (By.XPATH, "/html/body/div/div[2]/div/div[1]/ul/li[6]/a"))
             )
         tourneyResults.click()
+
         try:
             select = Select(
                 driver.find_element_by_xpath("/html/body/div/div[2]/div/div[1]/div[1]/form/div/span[1]/select"))
@@ -48,6 +49,10 @@ try:
                 preSeeds = driver.find_element_by_xpath(
                     "/html/body/div/div[2]/div/div[1]/div[2]/a[1]")
                 preSeeds.click()
+                url = driver.current_url
+                driver.close()
+                driver = webdriver.Chrome(PATH)
+                driver.get(url)
             except:
                 driver.quit()
         except:
