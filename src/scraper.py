@@ -20,7 +20,7 @@ driver = webdriver.Chrome(PATH, chrome_options=chrome_options)
 driver.get("https://www.tabroom.com/index/index.mhtml")
 searchQuery = driver.find_element_by_name("search")
 # This uses tab search, so enter the tournament name so that it's the first search result on tab
-tournamentName = "National Parliamentary Debate Invitational"
+tournamentName = "James Logan"
 searchQuery.send_keys(tournamentName)
 searchQuery.send_keys(Keys.RETURN)
 
@@ -48,7 +48,7 @@ try:
                 driver.find_element_by_xpath("/html/body/div/div[2]/div/div[1]/div[1]/form/div/span[1]/select"))
 
             # change this to whatever the open parli field is called
-            select.select_by_visible_text("Open Parli")
+            select.select_by_visible_text("Parliamentary Debate")
             button = driver.find_element_by_xpath(
                 "/html/body/div/div[2]/div/div[1]/div[1]/form/div/span[2]/input")
             button.click()
@@ -68,10 +68,11 @@ try:
                 for col in tableCol:
                     i += 1
                     #print(col.text)
-                    if "OSd" in col.text:
+                    if "OSd" in col.text:  # if statement for osd
+                        #if "Pts" in col.text and "-" not in col.text: #if statement for pts
+                        col.click()  # comment out for pts
                         col.click()
-                        col.click()
-                        print("true")
+                        #print("true")
                         break
                     else:
                         continue
@@ -101,7 +102,7 @@ try:
                                 teamData[name_col]['Expected'] = 4
                         else:
                             # This is specific to NPDI, should be 5 for non closeout DOctas, hoping to automate soon.
-                            teamData[name_col]['Expected'] = 4
+                            teamData[name_col]['Expected'] = 5
                     if int(place_col) > 32:
                         teamData[name_col]['Variance'] = teamData[name_col]['Expected']
                     teamData[name_col]['Place'] = place_col
@@ -116,7 +117,7 @@ try:
                         "table")
                     head = table.get_attribute('innerHTML')
                     head = BeautifulSoup(head, 'html.parser')
-                    #print(head)
+                    ##print(head)
                     k = 0
                     addPerson = True
                     for row in head.tbody.findAll('tr'):
@@ -136,23 +137,22 @@ try:
                             if "Triples" in each.findAll('span')[0].get_text(strip=True):
                                 break
                             if "Round" not in each.findAll('span')[0].get_text(strip=True):
-                                #print("round name: ")
-                                #print(each.findAll('span')[
-                                #      0].get_text(strip=True))
                                 actual += 1
                             else:
                                 break
 
                         name = name.get_text(strip=True)
-                        #print(actual)
+                        ##print(actual)
 
                         if any(name in d for d in teamData):
-
                             teamData[name]['Actual'] = actual
+                            k += 1
 
                         else:
+
                             if (actual == 0):
                                 addPerson = False
+
                             else:
                                 teamData[name] = {}
                                 teamData[name]["Expected"] = 0
@@ -160,32 +160,27 @@ try:
                         if addPerson == True:
                             teamData[name]['Variance'] = abs(
                                 int(actual) - int(teamData[name]['Expected']))
-                            #print("here")
-                            #print(actual)
-                            k += 1
+
                         addPerson = True
                         driver.back()
-                    #print(k)
                     with open(tournamentName.strip()+".json", "w") as outfile:
                         json.dump(teamData, outfile, indent=3)
                     total = 0
                     for teamName in teamData:
                         total += int(teamData[teamName]["Variance"])
-                    #print(len(teamData))
                     print(total/len(teamData))
                     time.sleep(1000)
                 except:
-                    print()
-                #print(teamData
+                    print("point of failure")
+                    time.sleep(1000)
             except:
-                print()
-                #driver.quit()
+                print("or here")
+                time.sleep(1000)
         except:
-            print()
-            #driver.quit()
+            print("but here")
+            time.sleep(1000)
     except:
-        print()
-        #driver.quit()
+        print("not here")
+        time.sleep(1000)
 except:
     print()
-    #driver.quit()

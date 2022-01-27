@@ -1,130 +1,271 @@
 {
-   "Irvington KS": {
-      "Place": "17",
-      "OppSeed": "15.20"
-   },
-   "Papaya Valley MK": {
-      "Place": "5",
-      "OppSeed": "15.40"
-   },
-   "Nueva SW": {
-      "Place": "37",
-      "OppSeed": "15.40"
-   },
-   "Gunn CM": {
-      "Place": "38",
-      "OppSeed": "16.00"
-   },
-   "Campolindo RK": {
-      "Place": "6",
-      "OppSeed": "17.80"
-   },
-   "Washington DJ": {
-      "Place": "1",
-      "OppSeed": "18.60"
-   },
-   "Granite Bay PB": {
-      "Place": "7",
-      "OppSeed": "18.60"
-   },
-   "Nueva NS": {
-      "Place": "8",
-      "OppSeed": "18.60"
-   },
-   "Papaya Valley TP": {
-      "Place": "9",
-      "OppSeed": "20.00"
-   },
-   "Nueva SaJo": {
-      "Place": "10",
-      "OppSeed": "20.00"
+   "Nueva DZ": {
+      "Expected": 4,
+      "Place": "3",
+      "OppSeed": "295.10",
+      "Actual": 4,
+      "Variance": 0
    },
    "Papaya Valley TK": {
+      "Expected": 4,
       "Place": "2",
-      "OppSeed": "20.20"
-   },
-   "Menlo-Atherton GP": {
-      "Place": "18",
-      "OppSeed": "20.20"
-   },
-   "Nova 42 RH": {
-      "Place": "19",
-      "OppSeed": "22.60"
-   },
-   "Irvington GV": {
-      "Place": "20",
-      "OppSeed": "23.40"
-   },
-   "Campolindo HW": {
-      "Place": "39",
-      "OppSeed": "24.00"
-   },
-   "Nueva DZ": {
-      "Place": "3",
-      "OppSeed": "24.80"
+      "OppSeed": "294.10",
+      "Actual": 3,
+      "Variance": 1
    },
    "Los Altos/Mountain View CL": {
+      "Expected": 4,
       "Place": "11",
-      "OppSeed": "24.80"
+      "OppSeed": "293.50",
+      "Actual": 4,
+      "Variance": 0
    },
-   "Los Altos MeCo": {
-      "Place": "21",
-      "OppSeed": "24.80"
+   "Washington DJ": {
+      "Expected": 4,
+      "Place": "1",
+      "OppSeed": "293.40",
+      "Actual": 3,
+      "Variance": 1
    },
-   "Irvington SG": {
-      "Place": "40",
-      "OppSeed": "24.80"
+   "Nova 42 RH": {
+      "Expected": 3,
+      "Place": "19",
+      "OppSeed": "292.90",
+      "Actual": 1,
+      "Variance": 2
    },
-   "Valley Christian KG": {
-      "Place": "60",
-      "OppSeed": "26.33"
+   "Campolindo RK": {
+      "Expected": 3,
+      "Place": "6",
+      "OppSeed": "292.50",
+      "Actual": 2,
+      "Variance": 1
    },
-   "Nueva CJ": {
-      "Place": "12",
-      "OppSeed": "26.40"
-   },
-   "Washington NP": {
-      "Place": "41",
-      "OppSeed": "26.40"
-   },
-   "Granite Bay SK": {
-      "Place": "61",
-      "OppSeed": "26.40"
+   "Nueva SaJo": {
+      "Expected": 3,
+      "Place": "10",
+      "OppSeed": "292.20",
+      "Actual": 4,
+      "Variance": 1
    },
    "Crystal Springs Uplands/Aragon CH": {
+      "Expected": 3,
       "Place": "4",
-      "OppSeed": "26.60"
+      "OppSeed": "291.70",
+      "Actual": 4,
+      "Variance": 1
    },
-   "Bishop O'Dowd WM": {
-      "Place": "13",
-      "OppSeed": "26.60"
+   "New Roads RS": {
+      "Expected": 2,
+      "Place": "15",
+      "OppSeed": "291.20",
+      "Actual": 1,
+      "Variance": 1
    },
-   "Cupertino DD": {
-      "Place": "42",
-      "OppSeed": "26.60"
+   "Menlo-Atherton GP": {
+      "Expected": 2,
+      "Place": "18",
+      "OppSeed": "290.90"
+   },
+   "Piedmont CG": {
+      "Expected": 2,
+      "Place": "22",
+      "OppSeed": "290.70"
+   },
+   "Papaya Valley ZR": {
+      "Expected": 2,
+      "Place": "26",
+      "OppSeed": "290.40"
+   },
+   "Papaya Valley TP": {
+      "Expected": 2,
+      "Place": "9",
+      "OppSeed": "289.60",
+      "Actual": 2,
+      "Variance": 0
+   },
+   "Nueva SW": {
+      "Expected": 2,
+      "Variance": 2,
+      "Place": "37",
+      "OppSeed": "289.50"
+   },
+   "Menlo MN": {
+      "Expected": 2,
+      "Variance": 2,
+      "Place": "51",
+      "OppSeed": "289.50"
+   },
+   "Gunn CM": {
+      "Expected": 2,
+      "Variance": 2,
+      "Place": "38",
+      "OppSeed": "289.00"
+   },
+   "Irvington SH": {
+      "Expected": 1,
+      "Variance": 1,
+      "Place": "35",
+      "OppSeed": "288.40",
+      "Actual": 0
+   },
+   "Los Altos MeCo": {
+      "Expected": 1,
+      "Place": "21",
+      "OppSeed": "288.10",
+      "Actual": 2,
+      "Variance": 1
+   },
+   "Irvington GV": {
+      "Expected": 1,
+      "Place": "20",
+      "OppSeed": "288.00",
+      "Actual": 1,
+      "Variance": 0
    },
    "Irvington RM": {
+      "Expected": 1,
+      "Variance": 1,
       "Place": "43",
-      "OppSeed": "27.20"
+      "OppSeed": "287.80"
    },
-   "Dougherty Valley HP": {
-      "Place": "44",
-      "OppSeed": "27.20"
+   "Nueva CJ": {
+      "Expected": 1,
+      "Place": "12",
+      "OppSeed": "287.70",
+      "Actual": 1,
+      "Variance": 0
    },
-   "Los Altos/Mountain View TH": {
-      "Place": "62",
-      "OppSeed": "27.20"
+   "Nueva PR": {
+      "Expected": 1,
+      "Variance": 1,
+      "Place": "57",
+      "OppSeed": "287.63"
    },
-   "Dougherty Valley VZ": {
-      "Place": "45",
-      "OppSeed": "28.00"
+   "Crater MH": {
+      "Expected": 1,
+      "Place": "28",
+      "OppSeed": "287.50",
+      "Actual": 1,
+      "Variance": 0
+   },
+   "Irvington MM": {
+      "Expected": 1,
+      "Variance": 1,
+      "Place": "58",
+      "OppSeed": "287.20"
+   },
+   "Bishop O'Dowd RJ": {
+      "Expected": 1,
+      "Place": "14",
+      "OppSeed": "286.80",
+      "Actual": 2,
+      "Variance": 1
+   },
+   "Granite Bay PB": {
+      "Expected": 1,
+      "Place": "7",
+      "OppSeed": "286.70",
+      "Actual": 1,
+      "Variance": 0
    },
    "Bishop O'Dowd DA": {
+      "Expected": 1,
+      "Variance": 1,
       "Place": "46",
-      "OppSeed": "28.00"
+      "OppSeed": "286.10"
+   },
+   "Irvington ZT": {
+      "Expected": 1,
+      "Variance": 1,
+      "Place": "36",
+      "OppSeed": "285.90",
+      "Actual": 0
+   },
+   "Los Altos/Mountain View TH": {
+      "Expected": 1,
+      "Variance": 1,
+      "Place": "62",
+      "OppSeed": "285.60"
+   },
+   "Campolindo MS": {
+      "Expected": 1,
+      "Place": "24",
+      "OppSeed": "285.30",
+      "Actual": 1,
+      "Variance": 0
+   },
+   "Los Altos LK": {
+      "Expected": 1,
+      "Variance": 1,
+      "Place": "34",
+      "OppSeed": "285.20",
+      "Actual": 0
    },
    "Dougherty Valley CX": {
+      "Expected": 1,
+      "Variance": 1,
       "Place": "47",
-      "OppSeed": "28.60"
+      "OppSeed": "285.20"
+   },
+   "Bishop O'Dowd WM": {
+      "Expected": 0,
+      "actual": 2,
+      "Variance": 2
+   },
+   "Campolindo TY": {
+      "Expected": 0,
+      "actual": 1,
+      "Variance": 1
+   },
+   "Papaya Valley MK": {
+      "Expected": 0,
+      "actual": 3,
+      "Variance": 3
+   },
+   "Nueva NS": {
+      "Expected": 0,
+      "actual": 2,
+      "Variance": 2
+   },
+   "Bishop O'Dowd MC": {
+      "Expected": 0,
+      "actual": 1,
+      "Variance": 1
+   },
+   "Irvington KS": {
+      "Expected": 0,
+      "actual": 2,
+      "Variance": 2
+   },
+   "Juniper NS": {
+      "Expected": 0,
+      "actual": 2,
+      "Variance": 2
+   },
+   "Los Altos IL": {
+      "Expected": 0,
+      "actual": 1,
+      "Variance": 1
+   },
+   "Los Altos MP": {
+      "Expected": 0,
+      "actual": 1,
+      "Variance": 1
+   },
+   "Los Altos MY": {
+      "Expected": 0,
+      "actual": 1,
+      "Variance": 1
+   },
+   "Los Altos/Mountain View VB": {
+      "Expected": 0,
+      "actual": 1,
+      "Variance": 1
+   },
+   "Menlo MG": {
+      "Expected": 0,
+      "actual": 1,
+      "Variance": 1
    }
 }

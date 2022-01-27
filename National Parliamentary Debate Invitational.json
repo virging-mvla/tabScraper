@@ -17,13 +17,15 @@
       "Expected": 4,
       "Variance": 4,
       "Place": "37",
-      "OppSeed": "15.40"
+      "OppSeed": "15.40",
+      "Actual": 0
    },
    "Gunn CM": {
       "Expected": 4,
       "Variance": 4,
       "Place": "38",
-      "OppSeed": "16.00"
+      "OppSeed": "16.00",
+      "Actual": 0
    },
    "Campolindo RK": {
       "Expected": 3,
@@ -99,7 +101,8 @@
       "Expected": 2,
       "Variance": 2,
       "Place": "39",
-      "OppSeed": "24.00"
+      "OppSeed": "24.00",
+      "Actual": 0
    },
    "Nueva DZ": {
       "Expected": 2,
@@ -126,13 +129,15 @@
       "Expected": 1,
       "Variance": 1,
       "Place": "40",
-      "OppSeed": "24.80"
+      "OppSeed": "24.80",
+      "Actual": 0
    },
    "Valley Christian KG": {
       "Expected": 1,
       "Variance": 1,
       "Place": "60",
-      "OppSeed": "26.33"
+      "OppSeed": "26.33",
+      "Actual": 0
    },
    "Nueva CJ": {
       "Expected": 1,
@@ -145,13 +150,15 @@
       "Expected": 1,
       "Variance": 1,
       "Place": "41",
-      "OppSeed": "26.40"
+      "OppSeed": "26.40",
+      "Actual": 0
    },
    "Granite Bay SK": {
       "Expected": 1,
       "Variance": 1,
       "Place": "61",
-      "OppSeed": "26.40"
+      "OppSeed": "26.40",
+      "Actual": 0
    },
    "Crystal Springs Uplands/Aragon CH": {
       "Expected": 1,
@@ -171,43 +178,50 @@
       "Expected": 1,
       "Variance": 1,
       "Place": "42",
-      "OppSeed": "26.60"
+      "OppSeed": "26.60",
+      "Actual": 0
    },
    "Irvington RM": {
       "Expected": 1,
       "Variance": 1,
       "Place": "43",
-      "OppSeed": "27.20"
+      "OppSeed": "27.20",
+      "Actual": 0
    },
    "Dougherty Valley HP": {
       "Expected": 1,
       "Variance": 1,
       "Place": "44",
-      "OppSeed": "27.20"
+      "OppSeed": "27.20",
+      "Actual": 0
    },
    "Los Altos/Mountain View TH": {
       "Expected": 1,
       "Variance": 1,
       "Place": "62",
-      "OppSeed": "27.20"
+      "OppSeed": "27.20",
+      "Actual": 0
    },
    "Dougherty Valley VZ": {
       "Expected": 1,
       "Variance": 1,
       "Place": "45",
-      "OppSeed": "28.00"
+      "OppSeed": "28.00",
+      "Actual": 0
    },
    "Bishop O'Dowd DA": {
       "Expected": 1,
       "Variance": 1,
       "Place": "46",
-      "OppSeed": "28.00"
+      "OppSeed": "28.00",
+      "Actual": 0
    },
    "Dougherty Valley CX": {
       "Expected": 1,
       "Variance": 1,
       "Place": "47",
-      "OppSeed": "28.60"
+      "OppSeed": "28.60",
+      "Actual": 0
    },
    "Bishop O'Dowd RJ": {
       "Expected": 0,

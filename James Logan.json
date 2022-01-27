@@ -52,13 +52,15 @@
       "Expected": 3,
       "Variance": 3,
       "Place": "43",
-      "OppSeed": "23.20"
+      "OppSeed": "23.20",
+      "Actual": 0
    },
    "Lowell UY": {
       "Expected": 2,
       "Variance": 2,
       "Place": "46",
-      "OppSeed": "23.60"
+      "OppSeed": "23.60",
+      "Actual": 0
    },
    "Campolindo KR": {
       "Expected": 2,
@@ -78,7 +80,8 @@
       "Expected": 2,
       "Variance": 2,
       "Place": "45",
-      "OppSeed": "26.00"
+      "OppSeed": "26.00",
+      "Actual": 0
    },
    "Cupertino KJ": {
       "Expected": 2,
@@ -98,7 +101,8 @@
       "Expected": 2,
       "Variance": 2,
       "Place": "49",
-      "OppSeed": "27.00"
+      "OppSeed": "27.00",
+      "Actual": 0
    },
    "Menlo-Atherton DA": {
       "Expected": 2,
@@ -125,7 +129,8 @@
       "Expected": 1,
       "Variance": 1,
       "Place": "44",
-      "OppSeed": "28.00"
+      "OppSeed": "28.00",
+      "Actual": 0
    },
    "Los Altos LK": {
       "Expected": 1,
@@ -145,19 +150,22 @@
       "Expected": 1,
       "Variance": 1,
       "Place": "58",
-      "OppSeed": "29.40"
+      "OppSeed": "29.40",
+      "Actual": 0
    },
    "Bishop O'Dowd JR": {
       "Expected": 1,
       "Variance": 1,
       "Place": "34",
-      "OppSeed": "30.40"
+      "OppSeed": "30.40",
+      "Actual": 0
    },
    "Mountain View LX": {
       "Expected": 1,
       "Variance": 1,
       "Place": "62",
-      "OppSeed": "30.60"
+      "OppSeed": "30.60",
+      "Actual": 0
    },
    "Irvington DR": {
       "Expected": 1,
@@ -177,7 +185,8 @@
       "Expected": 1,
       "Variance": 1,
       "Place": "61",
-      "OppSeed": "31.00"
+      "OppSeed": "31.00",
+      "Actual": 0
    },
    "Archbishop Mitty DB": {
       "Expected": 1,
