@@ -1,9 +1,9 @@
 # Tabroom Scraper
 
-Current Status :  Can assign an oppSeed variance for doctas tournaments, but you need to input the name of the parli field
-and the number of elims (closeouts not detected). Does not work for Pts yet. 
+Current Status :  Can assign an oppSeed/pts variance for doctas tournaments, but you need to input the name of the parli field
+and the number of elims (closeouts not detected). 
 
-Todo: More automation and make it work with speaks
+Todo: More automation
 
 NOTE : This'll depend on final implementation, but as of right now, this will never work for tournaments that break to more than double octas. 
 
