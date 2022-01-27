@@ -1,11 +1,11 @@
 # Tabroom Scraper
 
-Current Status :  Can take tournament name as an input string and use that to navigate to the tournament's parli results page.
-Can then navigate to prelim seeding info, sort by oppseed, save the top 32 team (by oppseed) names, their oppseed and actual seed.
+Current Status :  Can assign an oppSeed variance for doctas tournaments, but you need to input the name of the parli field
+and the number of elims (closeouts not detected). Does not work for Pts yet. 
 
-Todo: Assign each team a variance and make this work with speaks as well. 
+Todo: More automation and make it work with speaks
 
-NOTE : This'll depend on final implementation, but as of right now, this will not work for tournaments that break to more than double octas. 
+NOTE : This'll depend on final implementation, but as of right now, this will never work for tournaments that break to more than double octas. 
 
 Program to determine accuracy of different metrics for predicting debate breaks
 
