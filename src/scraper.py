@@ -19,7 +19,8 @@ driver = webdriver.Chrome(PATH, chrome_options=chrome_options)
 # search for tournament
 driver.get("https://www.tabroom.com/index/index.mhtml")
 searchQuery = driver.find_element_by_name("search")
-tournamentName = "James Logan"
+# This uses tab search, so enter the tournament name so that it's the first search result on tab
+tournamentName = "National Parliamentary Debate Invitational"
 searchQuery.send_keys(tournamentName)
 searchQuery.send_keys(Keys.RETURN)
 
@@ -45,7 +46,9 @@ try:
         try:
             select = Select(
                 driver.find_element_by_xpath("/html/body/div/div[2]/div/div[1]/div[1]/form/div/span[1]/select"))
-            select.select_by_visible_text("Parliamentary Debate")
+
+            # change this to whatever the open parli field is called
+            select.select_by_visible_text("Open Parli")
             button = driver.find_element_by_xpath(
                 "/html/body/div/div[2]/div/div[1]/div[1]/form/div/span[2]/input")
             button.click()
@@ -97,7 +100,8 @@ try:
                             else:
                                 teamData[name_col]['Expected'] = 4
                         else:
-                            teamData[name_col]['Expected'] = 5
+                            # This is specific to NPDI, should be 5 for non closeout DOctas, hoping to automate soon.
+                            teamData[name_col]['Expected'] = 4
                     if int(place_col) > 32:
                         teamData[name_col]['Variance'] = teamData[name_col]['Expected']
                     teamData[name_col]['Place'] = place_col
@@ -171,7 +175,7 @@ try:
                     print(total/len(teamData))
                     time.sleep(1000)
                 except:
-                    print("hi")
+                    print()
                 #print(teamData
             except:
                 print()
