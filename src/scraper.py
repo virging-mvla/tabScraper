@@ -103,8 +103,6 @@ try:
                     teamData[name_col]['Place'] = place_col
                     teamData[name_col]['OppSeed'] = oppseed_col
                     j += 1
-                with open(tournamentName.strip()+".json", "w") as outfile:
-                    json.dump(teamData, outfile, indent=3)
                 try:
                     recordButton = driver.find_element_by_partial_link_text(
                         "Prelim Records")
@@ -114,10 +112,12 @@ try:
                         "table")
                     head = table.get_attribute('innerHTML')
                     head = BeautifulSoup(head, 'html.parser')
-                    print(head)
+                    #print(head)
                     k = 0
+                    addPerson = True
                     for row in head.tbody.findAll('tr'):
                         if(k >= 32):
+                            #print("breaking")
                             break
                         name = row.findAll('td')[2]
                         nameButton = driver.find_element_by_link_text(
@@ -129,17 +129,49 @@ try:
                             teamTable.get_attribute('innerHTML'), 'html.parser')
                         actual = 0
                         for each in teamTable.select('div[class*="row"]'):
-                            if "Round" not in each.findAll('span')[1].get_text(strip=True):
+                            if "Triples" in each.findAll('span')[0].get_text(strip=True):
+                                break
+                            if "Round" not in each.findAll('span')[0].get_text(strip=True):
+                                #print("round name: ")
+                                #print(each.findAll('span')[
+                                #      0].get_text(strip=True))
                                 actual += 1
                             else:
                                 break
-                        print(name.get_text(strip=True))
-                        print(actual)
+
+                        name = name.get_text(strip=True)
+                        #print(actual)
+
+                        if any(name in d for d in teamData):
+
+                            teamData[name]['Actual'] = actual
+
+                        else:
+                            if (actual == 0):
+                                addPerson = False
+                            else:
+                                teamData[name] = {}
+                                teamData[name]["Expected"] = 0
+                                teamData[name]["actual"] = actual
+                        if addPerson == True:
+                            teamData[name]['Variance'] = abs(
+                                int(actual) - int(teamData[name]['Expected']))
+                            #print("here")
+                            #print(actual)
+                            k += 1
+                        addPerson = True
                         driver.back()
-                        k += 1
+                    #print(k)
+                    with open(tournamentName.strip()+".json", "w") as outfile:
+                        json.dump(teamData, outfile, indent=3)
+                    total = 0
+                    for teamName in teamData:
+                        total += int(teamData[teamName]["Variance"])
+                    #print(len(teamData))
+                    print(total/len(teamData))
                     time.sleep(1000)
                 except:
-                    print()
+                    print("hi")
                 #print(teamData
             except:
                 print()
